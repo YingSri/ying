@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LOL立方体</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        div {
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            line-height: 100px;
+        }
+        .box div {
+            transition: all 1s;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .box {
+            margin: 150px auto;
+            position: relative;
+            transform-style: preserve-3d;
+            /*perspective: 3000px;*/
+            transition: all 3s;
+            transform: rotateX(20deg) rotateY(20deg);
+            animation: rotate 5s linear infinite;
+        }
+
+        .box:hover .top {
+            transform: rotateX(90deg) translateZ(250px);
+        }
+        .box:hover .bottom {
+            transform: rotateX(-90deg) translateZ(250px);
+        }
+        .box:hover .left {
+            transform: rotateY(-90deg) translateZ(250px);
+        }
+        .box:hover .right {
+            transform: rotateY(90deg) translateZ(250px);
+        }
+        .box:hover .front {
+            transform: translateZ(250px);
+        }
+        .box:hover .back {
+            transform: rotateY(180deg) translateZ(250px);
+        }
+
+
+        @keyframes rotate {
+            0% {
+                transform: rotateX(20deg) rotateY(20deg);
+            }
+            100% {
+                transform: rotateX(380deg) rotateY(380deg);
+            }
+        }
+
+        .top {
+            opacity: 0.8;
+            transform: rotateX(90deg) translateZ(150px);
+        }
+        .bottom {
+            opacity: 0.8;
+            transform: rotateX(-90deg) translateZ(150px);
+        }
+        .left {
+            opacity: 0.8;
+            transform: rotateY(-90deg) translateZ(150px);
+        }
+        .right {
+            opacity: 0.8;
+            transform: rotateY(90deg) translateZ(150px);
+        }
+        .front {
+            opacity: 0.8;
+            transform: translateZ(150px);
+        }
+        .back {
+            opacity: 0.8;
+            transform: rotateY(180deg) translateZ(150px);
+        }
+        .box > div > img {
+            width: 100%;
+        }
+
+/*----------------------------------------------*/
+
+        span{
+            display: block;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            transition: all 3s;
+        }
+
+
+
+        .top1{
+            width: 100px;
+            height: 100px;
+            opacity:1;
+            transform: rotateX(90deg) translateZ(50px);
+        }
+        .bottom1{
+            width: 100px;
+            height: 100px;
+            opacity:1;
+            transform: rotateX(-90deg) translateZ(50px);
+        }
+        .left1{
+            width: 100px;
+            height: 100px;
+            opacity:1;
+            transform: rotateY(-90deg) translateZ(50px);
+        }
+        .right1{
+            width: 100px;
+            height: 100px;
+            opacity:1;
+            transform: rotateY(90deg) translateZ(50px);
+        }
+        .front1{
+            width: 100px;
+            height: 100px;
+            opacity:1;
+            transform:translateZ(50px);
+        }
+        .back1{
+            width: 100px;
+            height: 100px;
+            opacity:1;
+            transform:rotateY(180deg) translateZ(50px);
+        }
+        .box > div > img {
+            width: 100%;
+            height: 100%;
+        }
+        .box > span > img {
+            width: 100%;
+            height: 100%;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <div class="top"><img src="2.png" alt=""></div>
+    <div class="bottom"><img src="1.jpg" alt=""></div>
+    <div class="left"><img src="12.jpg" alt=""></div>
+    <div class="right"><img src="3.jpg" alt=""></div>
+    <div class="front"><img src="4.jpg" alt=""></div>
+    <div class="back"><img src="5.jpg" alt=""></div>
+
+    <span class="top1"><img src="6.jpg" alt=""></span>
+    <span class="bottom1"><img src="7.jpg" alt=""></span>
+    <span class="left1"><img src="8.jpg" alt=""></span>
+    <span class="right1"><img src="9.jpg" alt=""></span>
+    <span class="front1"><img src="10.jpg" alt=""></span>
+    <span class="back1"><img src="11.jpg" alt=""></span>
+</div>
+
+</body>
+</html>
