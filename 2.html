@@ -9,8 +9,8 @@
             padding: 0;
         }
         div {
-            width: 300px;
-            height: 300px;
+            width: 500px;
+            height: 500px;
             text-align: center;
             line-height: 100px;
         }
@@ -21,7 +21,7 @@
             left: 0;
         }
         .box {
-            margin: 500px 0 0 0 ;
+            margin: 150px auto;
             position: relative;
             transform-style: preserve-3d;
             /*perspective: 3000px;*/
@@ -31,22 +31,22 @@
         }
 
         .box:hover .top {
-            transform: rotateX(90deg) translateZ(250px);
+            transform: rotateX(90deg) translateZ(350px);
         }
         .box:hover .bottom {
-            transform: rotateX(-90deg) translateZ(250px);
+            transform: rotateX(-90deg) translateZ(350px);
         }
         .box:hover .left {
-            transform: rotateY(-90deg) translateZ(250px);
+            transform: rotateY(-90deg) translateZ(350px);
         }
         .box:hover .right {
-            transform: rotateY(90deg) translateZ(250px);
+            transform: rotateY(90deg) translateZ(350px);
         }
         .box:hover .front {
-            transform: translateZ(250px);
+            transform: translateZ(350px);
         }
         .box:hover .back {
-            transform: rotateY(180deg) translateZ(250px);
+            transform: rotateY(180deg) translateZ(350px);
         }
 
 
@@ -59,29 +59,30 @@
             }
         }
 
+        /*大*/
         .top {
             opacity: 0.8;
-            transform: rotateX(90deg) translateZ(150px);
+            transform: rotateX(90deg) translateZ(250px);
         }
         .bottom {
             opacity: 0.8;
-            transform: rotateX(-90deg) translateZ(150px);
+            transform: rotateX(-90deg) translateZ(250px);
         }
         .left {
             opacity: 0.8;
-            transform: rotateY(-90deg) translateZ(150px);
+            transform: rotateY(-90deg) translateZ(250px);
         }
         .right {
             opacity: 0.8;
-            transform: rotateY(90deg) translateZ(150px);
+            transform: rotateY(90deg) translateZ(250px);
         }
         .front {
             opacity: 0.8;
-            transform: translateZ(150px);
+            transform: translateZ(250px);
         }
         .back {
             opacity: 0.8;
-            transform: rotateY(180deg) translateZ(150px);
+            transform: rotateY(180deg) translateZ(250px);
         }
         .box > div > img {
             width: 100%;
@@ -98,42 +99,42 @@
         }
 
 
-
+        /*小*/
         .top1{
-            width: 100px;
-            height: 100px;
+            width: 300px;
+            height: 300px;
             opacity:1;
-            transform: rotateX(90deg) translateZ(50px);
+            transform: rotateX(90deg) translateZ(150px);
         }
         .bottom1{
-            width: 100px;
-            height: 100px;
+            width: 300px;
+            height: 300px;
             opacity:1;
-            transform: rotateX(-90deg) translateZ(50px);
+            transform: rotateX(-90deg) translateZ(150px);
         }
         .left1{
-            width: 100px;
-            height: 100px;
+            width: 300px;
+            height: 300px;
             opacity:1;
-            transform: rotateY(-90deg) translateZ(50px);
+            transform: rotateY(-90deg) translateZ(150px);
         }
         .right1{
-            width: 100px;
-            height: 100px;
+            width: 300px;
+            height: 300px;
             opacity:1;
-            transform: rotateY(90deg) translateZ(50px);
+            transform: rotateY(90deg) translateZ(150px);
         }
         .front1{
-            width: 100px;
-            height: 100px;
+            width: 300px;
+            height: 300px;
             opacity:1;
-            transform:translateZ(50px);
+            transform:translateZ(150px);
         }
         .back1{
-            width: 100px;
-            height: 100px;
+            width: 300px;
+            height: 300px;
             opacity:1;
-            transform:rotateY(180deg) translateZ(50px);
+            transform:rotateY(180deg) translateZ(150px);
         }
         .box > div > img {
             width: 100%;
